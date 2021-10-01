@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Faxi";
+  src: url("Faxi-Regular.woff2") format("woff2"),
+    url("Faxi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-1: #ffcd00;
+  --color-2: #003087;
+  --color-3: #c8102e;
+  --color-4: #eacccd;
+  --color-5: #191102;
+
+  --overskrift: "Faxi";
+  --brodtekst: "Merriweather", serif;
+  --main-text-color: #191102;
+
+  --white-space: 2rem;
+}
+body {
+  margin: 0;
+}
+html {
+  font-size: 100%;
+  font-family: var(--brodtekst);
+}
+
+h1 {
+  font-family: var(--overskrift);
+  color: var(--color-2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  font-family: var(--brodtekst);
+}
+
+.navbar-brand {
+  width: 7.5rem;
+}
+
+#dumknapp {
+  border-radius: 200px;
+  border-color: transparent;
+  color: transparent;
+}
+
+.bg-light {
+  border-color: transparent;
+}
+
+#showcase {
+  background-image: url(assets/hero_example.jpg);
+  height: 91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+#showcase button {
+  margin-top: 1.8em;
+}
+
+#showcase p {
+  color: white;
+}
+
+.btn {
+  color: #003087;
+  border-color: #003087;
+}
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+
+@media (min-width: 576px) {
+  body {
+    background-color: red;
+  }
+
+  #hero {
+    background-color: red;
+  }
+
+  #voresis {
+    background-color: red;
+  }
+
+  #tilbud {
+    background-color: red;
+  }
+
+  #omos {
+    background-color: red;
+  }
+}
+
+/* END "sm-" 576px and up */
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+
+  #hero {
+    background-color: yellow;
+  }
+
+  #voresis {
+    background-color: yellow;
+  }
+
+  #tilbud {
+    background-color: yellow;
+  }
+
+  #omos {
+    background-color: yellow;
+  }
+}
+
+/* END "md-" 768px and up */
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+  /* END "lg-" 992px and up */
+  body {
+    background-color: peru;
+  }
+
+  #hero {
+    background-color: peru;
+  }
+
+  #voresis {
+    background-color: peru;
+  }
+
+  #tilbud {
+    background-color: peru;
+  }
+
+  #omos {
+    background-color: peru;
+  }
+}
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+  /* END "xl-" 1200px and up */
+  body {
+    background-color: blue;
+  }
+
+  #hero {
+    background-color: blue;
+  }
+
+  #voresis {
+    background-color: blue;
+  }
+
+  #tilbud {
+    background-color: blue;
+  }
+
+  #omos {
+    background-color: blue;
+  }
+}
+
+/**************************************************/
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/**************************************************/
+@media (min-width: 1400px) {
+  /* END "xxl-" 1400px and up */
+}

@@ -14,10 +14,170 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <title>Tinto Roastworks</title>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img
+              class="img-fluid"
+              src="/assets/Tinto_Coffee_Logo_Logo.png"
+              alt="Tinto Coffee Logp"
+            />
+          </a>
+          <button
+            id="dumknapp"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBasic"
+            aria-controls="navbarBasic"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarBasic">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://vg.no">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="showcase">
+      <p>Tinto Roastworks</p>
+      <h1>Deilig kaffe med et formål</h1>
+      <div>
+        <button type="button" class="btn btn-outline-primary">
+          Utforsk våre produkter
+        </button>
+      </div>
+    </div>
+
+    <main class="container">
+      <section id="hero" class="row position-relative">
+        <div class="md-col-11">
+          <img class="img-fluid" src="assets/" alt="" />
+        </div>
+        <div class="col-klasser-her text-center position-absolute herotext">
+          <h5>Ispusheren - Amager isbutik</h5>
+        </div>
+      </section>
+
+      <section id="voresis" class="row">
+        <div class="col-klasser-her text-center mb-5">
+          <h2>Vores is - sortimentet</h2>
+        </div>
+        <div class="col-md-6 text-center mb-5 col-lg-4 col-xl-2">
+          <img class="img-fluid" src="assets/MockUp_2.png" alt="" />
+          <h4>Astronaut</h4>
+          <p>14 DKK</p>
+          <button type="button" class="btn btn-success btn-lg">Køb</button>
+        </div>
+        <div class="col-md-6 text-center mb-5 col-lg-4 col-xl-2">
+          <img class="img-fluid" src="assets/MockUp_1.png" alt="" />
+          <h4>Chokoladeis</h4>
+          <p>32 DKK</p>
+          <button type="button" class="btn btn-success btn-lg">Køb</button>
+        </div>
+        <div class="col-md-6 text-center mb-5 col-lg-4 col-xl-2">
+          <img class="img-fluid" src="assets/MockUp_1.png" alt="" />
+          <h4>Flot, dyr is</h4>
+          <p>82 DKK</p>
+          <button type="button" class="btn btn-success btn-lg">Køb</button>
+        </div>
+        <div class="col-md-6 text-center mb-5 col-lg-4 col-xl-2">
+          <img class="img-fluid" src="assets/MockUp_1.png" alt="" />
+          <h4>Billig grim is</h4>
+          <p>6 DKK</p>
+          <button type="button" class="btn btn-success btn-lg">Køb</button>
+        </div>
+        <div class="col-md-6 text-center mb-5 col-lg-4 col-xl-2">
+          <img class="img-fluid" src="assets/MockUp_1.png" alt="" />
+          <h4>Væltet is</h4>
+          <p>12 DKK</p>
+          <button type="button" class="btn btn-success btn-lg">Køb</button>
+        </div>
+        <div class="col-md-6 text-center mb-5 col-lg-4 col-xl-2">
+          <img class="img-fluid" src="assets/MockUp_3.png" alt="" />
+          <h4>Min yndling!</h4>
+          <p>24 DKK</p>
+          <button type="button" class="btn btn-success btn-lg">Køb</button>
+        </div>
+      </section>
+
+      <section id="tilbud" class="row">
+        <div class="col-klasser-her mb-4 mb-md-0 mb-lg-3">
+          <h2>Aktuelle tilbud</h2>
+        </div>
+        <div class="col-md-6 mb-4 d-md-flex flex-md-column col-lg-3">
+          <h5>Dagens tilbud</h5>
+          <p>Du kan få en portion flødeskum med ved køb af en kæmpe is.</p>
+          <button
+            type="button"
+            class="btn btn-warning btn-sm col-md-12 mt-md-auto"
+          >
+            Køb nu
+          </button>
+        </div>
+        <div class="col-md-6 mb-4 d-md-flex flex-md-column col-lg-3">
+          <h5>Ugens tilbud</h5>
+          <p>Denne uge kan du få en øl-is.</p>
+          <button
+            type="button"
+            class="btn btn-warning btn-sm col-md-12 mt-md-auto"
+          >
+            Køb nu
+          </button>
+        </div>
+        <div class="col-md-6 mb-4 d-md-flex flex-md-column col-lg-3">
+          <h5>Månedens tilbud</h5>
+          <p>Vinteris - meget varm. Smager lidt af mormor-cacao.</p>
+          <button
+            type="button"
+            class="btn btn-warning btn-sm col-md-12 mt-md-auto"
+          >
+            Køb nu
+          </button>
+        </div>
+        <div class="col-md-6 mb-4 d-md-flex flex-md-column col-lg-3">
+          <h5>Medlemstilbud</h5>
+          <p>Købe en is - og få en gratis</p>
+          <button
+            type="button"
+            class="btn btn-warning btn-sm col-md-12 mt-md-auto"
+          >
+            Køb nu
+          </button>
+        </div>
+      </section>
+
+      <section id="omos" class="row">
+        <div class="col-klasser-her">
+          <h2>Vi holder til på Amager</h2>
+        </div>
+        <div class="col-klasser-her">
+          <p>Og vores is kan købes gennem Kalles kaffe. Check vores lokaler:</p>
+        </div>
+        <div class="col-klasser-her">
+          <h2>
+            <img class="img-fluid" src="imgs/iskiosk.jpg" alt="iskiosk" />
+          </h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- slut på indhold -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 

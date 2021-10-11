@@ -32,7 +32,16 @@ html {
 
 h1 {
   font-family: var(--overskrift);
-  color: var(--color-2);
+  color: var(--color-1);
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: var(--brodtekst);
+  color: var(--color-5);
 }
 
 img {
@@ -69,17 +78,34 @@ img {
   padding-left: 2em;
 }
 
+#showcase button:hover {
+  background-color: var(--color-1);
+  border-color: transparent;
+}
+
 #showcase button {
   margin-top: 1.8em;
 }
 
 #showcase p {
-  color: white;
+  color: var(--color-1);
 }
 
 .btn {
-  color: #003087;
-  border-color: #003087;
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+
+#showcase .btn {
+  color: var(--color-1);
+}
+
+#showcase .btn:hover {
+  color: var(--color-2);
+}
+
+#footer svg {
+  margin: 0;
 }
 
 /**************************************************/
@@ -88,23 +114,23 @@ img {
 
 @media (min-width: 576px) {
   body {
-    background-color: red;
+    background-color: white;
   }
 
   #hero {
-    background-color: red;
+    background-color: white;
   }
 
   #voresis {
-    background-color: red;
+    background-color: white;
   }
 
   #tilbud {
-    background-color: red;
+    background-color: white;
   }
 
   #omos {
-    background-color: red;
+    background-color: white;
   }
 }
 
@@ -114,25 +140,6 @@ img {
 /* // Medium devices (tablets, 768px and up) */
 /**************************************************/
 @media (min-width: 768px) {
-  body {
-    background-color: yellow;
-  }
-
-  #hero {
-    background-color: yellow;
-  }
-
-  #voresis {
-    background-color: yellow;
-  }
-
-  #tilbud {
-    background-color: yellow;
-  }
-
-  #omos {
-    background-color: yellow;
-  }
 }
 
 /* END "md-" 768px and up */
@@ -142,25 +149,6 @@ img {
 /**************************************************/
 @media (min-width: 992px) {
   /* END "lg-" 992px and up */
-  body {
-    background-color: peru;
-  }
-
-  #hero {
-    background-color: peru;
-  }
-
-  #voresis {
-    background-color: peru;
-  }
-
-  #tilbud {
-    background-color: peru;
-  }
-
-  #omos {
-    background-color: peru;
-  }
 }
 
 /**************************************************/
@@ -168,24 +156,8 @@ img {
 /**************************************************/
 @media (min-width: 1200px) {
   /* END "xl-" 1200px and up */
-  body {
-    background-color: blue;
-  }
-
-  #hero {
-    background-color: blue;
-  }
-
-  #voresis {
-    background-color: blue;
-  }
-
   #tilbud {
-    background-color: blue;
-  }
-
-  #omos {
-    background-color: blue;
+    margin: 5rem;
   }
 }
 

@@ -104,8 +104,93 @@ img {
   color: var(--color-2);
 }
 
+#tilbud {
+  background-color: var(--color-1);
+  margin-bottom: -7px;
+}
+
+#tilbud h2 {
+  font-family: var(--overskrift);
+  color: var(--color-2);
+}
+
+#informasjon {
+  background-color: var(--color-2);
+  align-items: center;
+}
+
+#footer h3 {
+  background-color: var(--color-3);
+}
+
 #footer svg {
   margin: 0;
+}
+
+#footer {
+  background-color: var(--color-2);
+}
+
+.spacer2 {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -1px;
+  background-color: var(--color-2);
+}
+
+.spacer {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+}
+
+/* CSS for Buttons */
+.myButton {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--brodtekst);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  width: auto;
+}
+
+.myButton:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+.myButton:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
+}
+
+.myButton:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.myButton:hover {
+  background-color: var(--color-5);
+  color: #ffffff;
 }
 
 /**************************************************/
@@ -121,12 +206,12 @@ img {
     background-color: white;
   }
 
-  #voresis {
+  #produkter {
     background-color: white;
   }
 
   #tilbud {
-    background-color: white;
+    background-color: var(--color-1);
   }
 
   #omos {
@@ -157,7 +242,13 @@ img {
 @media (min-width: 1200px) {
   /* END "xl-" 1200px and up */
   #tilbud {
-    margin: 5rem;
+    margin-top: -3rem;
+    padding: 5rem;
+  }
+
+  #produkter h2 {
+    margin-right: 15rem;
+    margin-left: 15rem;
   }
 }
 
@@ -166,4 +257,37 @@ img {
 /**************************************************/
 @media (min-width: 1400px) {
   /* END "xxl-" 1400px and up */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark styles */
+  body {
+    background-color: var(--color-5);
+  }
+
+  #hero {
+    background-color: var(--color-5);
+  }
+
+  #produkter {
+    background-color: var(--color-5);
+  }
+
+  #tilbud {
+    background-color: var(--color-5);
+  }
+
+  #omos {
+    background-color: var(--color-5);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #ffffff;
+  }
 }

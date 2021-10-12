@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Faxi";
+  src: url("Faxi-Regular.woff2") format("woff2"),
+    url("Faxi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-1: #ffcd00;
+  --color-2: #003087;
+  --color-3: #c8102e;
+  --color-4: #eacccd;
+  --color-5: #191102;
+
+  --overskrift: "Faxi";
+  --brodtekst: "Merriweather", serif;
+  --main-text-color: #191102;
+
+  --white-space: 2rem;
+}
+body {
+  margin: 0;
+}
+html {
+  font-size: 100%;
+  font-family: var(--brodtekst);
+}
+
+h1 {
+  font-family: var(--overskrift);
+  color: var(--color-1);
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: var(--brodtekst);
+  color: var(--color-5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  font-family: var(--brodtekst);
+}
+
+.navbar-brand {
+  width: 7.5rem;
+}
+
+#dumknapp {
+  border-radius: 200px;
+  border-color: transparent;
+  color: transparent;
+}
+
+.bg-light {
+  border-color: transparent;
+}
+
+#showcase {
+  background-image: url(assets/hero_example.jpg);
+  height: 91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+#showcase button:hover {
+  background-color: var(--color-1);
+  border-color: transparent;
+}
+
+#showcase button {
+  margin-top: 1.8em;
+}
+
+#showcase p {
+  color: var(--color-1);
+}
+
+.btn {
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+
+#showcase .btn {
+  color: var(--color-1);
+}
+
+#showcase .btn:hover {
+  color: var(--color-2);
+}
+
+#tilbud {
+  background-color: var(--color-1);
+  margin-bottom: -7px;
+}
+
+#tilbud h2 {
+  font-family: var(--overskrift);
+  color: var(--color-2);
+}
+
+#informasjon {
+  background-color: var(--color-2);
+  align-items: center;
+}
+
+#footer h3 {
+  background-color: var(--color-3);
+}
+
+#footer svg {
+  margin: 0;
+}
+
+#footer {
+  background-color: var(--color-2);
+}
+
+.spacer2 {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -1px;
+  background-color: var(--color-2);
+}
+
+.spacer {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+}
+
+/* CSS for Buttons */
+.myButton {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--brodtekst);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  width: auto;
+}
+
+.myButton:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+.myButton:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
+}
+
+.myButton:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.myButton:hover {
+  background-color: var(--color-5);
+  color: #ffffff;
+}
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+
+@media (min-width: 576px) {
+  body {
+    background-color: white;
+  }
+
+  #hero {
+    background-color: white;
+  }
+
+  #produkter {
+    background-color: white;
+  }
+
+  #tilbud {
+    background-color: var(--color-1);
+  }
+
+  #omos {
+    background-color: white;
+  }
+}
+
+/* END "sm-" 576px and up */
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+}
+
+/* END "md-" 768px and up */
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+  /* END "lg-" 992px and up */
+}
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+  /* END "xl-" 1200px and up */
+  #tilbud {
+    margin-top: -3rem;
+    padding: 5rem;
+  }
+
+  #produkter h2 {
+    margin-right: 15rem;
+    margin-left: 15rem;
+  }
+}
+
+/**************************************************/
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/**************************************************/
+@media (min-width: 1400px) {
+  /* END "xxl-" 1400px and up */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark styles */
+  body {
+    background-color: var(--color-5);
+  }
+
+  #hero {
+    background-color: var(--color-5);
+  }
+
+  #produkter {
+    background-color: var(--color-5);
+  }
+
+  #tilbud {
+    background-color: var(--color-5);
+  }
+
+  #omos {
+    background-color: var(--color-5);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #ffffff;
+  }
+}

@@ -12,12 +12,192 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <title>Tinto Roastworks</title>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="img-fluid"
+              src="/assets/Tinto_Coffee_Logo_Logo.png"
+              alt="Tinto Coffee Logo"
+            />
+          </a>
+          <button
+            id="dumknapp"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBasic"
+            aria-controls="navbarBasic"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarBasic">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#produkter"
+                  >Produkter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://vg.no">Om Oss</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="showcase" class="mb-5">
+      <p>Tinto Roastworks</p>
+      <h1>Life Changing Coffee</h1>
+      <div>
+        <button type="button" class="btn btn-outline-primary">
+          Utforsk våre produkter
+        </button>
+      </div>
+    </div>
+
+    <main class="container-fluid">
+      <section id="hero" class="row position-relative">
+        <div class="md-col-11">
+          <img class="img-fluid" src="assets/" alt="" />
+        </div>
+      </section>
+
+      <section id="produkter" class="row">
+        <div class="text-center mb-8 mt-8">
+          <h2>
+            "Våre bønner er litt dyrere, for at våre bønder kan overleve."
+          </h2>
+        </div>
+        <div class="col-md-4 text-center mb-5 col-lg-4 col-xl-4">
+          <img class="img-fluid" src="assets/CafeDeAndresa_2.png" alt="" />
+          <h4>Café De Andérsa</h4>
+          <p>En spennende mix for deg som ønsker å utfordre smaksløkene.</p>
+          <p>249 DKK</p>
+          <button type="button" class="myButton btn btn-success btn-lg">
+            Køb
+          </button>
+        </div>
+        <div class="col-md-4 text-center mb-5 col-lg-4 col-xl-4">
+          <img class="img-fluid" src="assets/FincaDelQuindio_1.png" alt="" />
+          <h4>Finca Del Quindio</h4>
+          <p>En ren kaffebønneblanding med en deilig, eksotisk fruktsmak.</p>
+          <p>249 DKK</p>
+          <button type="button" class="myButton btn btn-success btn-lg">
+            Køb
+          </button>
+        </div>
+        <div class="col-md-4 text-center mb-5 col-lg-4 col-xl-4">
+          <img class="img-fluid" src="assets/BigoteDePablo_3.png" alt="" />
+          <h4>Bigote De Pablo</h4>
+          <p>Colombiansk favoritt. Søt og fruktig med en blomsterlig aroma.</p>
+          <p>249 DKK</p>
+          <button type="button" class="myButton btn btn-success btn-lg">
+            Køb
+          </button>
+        </div>
+      </section>
+      <div class="spacer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffcd00"
+            fill-opacity="1"
+            d="M0,160L60,170.7C120,181,240,203,360,186.7C480,171,600,117,720,133.3C840,149,960,235,1080,261.3C1200,288,1320,256,1380,240L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <section id="tilbud" class="row">
+        <div class="text-center mb-4 mb-md-6 mb-lg-8">
+          <h2>Våre hjertesaker</h2>
+        </div>
+        <div class="col-md-6 mb-4 d-md-flex flex-md-column col-lg-6">
+          <img src="assets/Tinto-1.jpg" alt="Test" class="mb-4" />
+          <h5>Dagens tilbud</h5>
+          <p>Du kan få en portion flødeskum med ved køb af en kæmpe is.</p>
+          <button type="button" class="myButton btn-sm col-md-12 mt-md-auto">
+            Utforsk mer
+          </button>
+        </div>
+        <div class="col-md-6 mb-4 d-md-flex flex-md-column col-lg-6">
+          <img src="assets/Tinto-2.jpg" alt="Test" class="mb-4" />
+          <h5>Ugens tilbud</h5>
+          <p>Denne uge kan du få en øl-is.</p>
+          <button type="button" class="myButton btn-sm col-md-12 mt-md-auto">
+            Utforsk mer
+          </button>
+        </div>
+      </section>
+      <div class="spacer2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffcd00"
+            fill-opacity="1"
+            d="M0,192L34.3,165.3C68.6,139,137,85,206,96C274.3,107,343,181,411,213.3C480,245,549,235,617,202.7C685.7,171,754,117,823,112C891.4,107,960,149,1029,165.3C1097.1,181,1166,171,1234,138.7C1302.9,107,1371,53,1406,26.7L1440,0L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <section id="informasjon" class="row">
+        <div class="sk-instagram-feed" data-embed-id="67651"></div>
+        <script
+          src="https://www.sociablekit.com/app/embed/instagram-feed/widget.js"
+          async
+          defer
+        ></script>
+      </section>
+    </main>
+
+    <section id="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#c8102e"
+          fill-opacity="1"
+          d="M0,160L60,170.7C120,181,240,203,360,186.7C480,171,600,117,720,133.3C840,149,960,235,1080,261.3C1200,288,1320,256,1380,240L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+
+      <h3>Besøk vår Instagram</h3>
+    </section>
+
+    <!-- slut på indhold -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -28,6 +208,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

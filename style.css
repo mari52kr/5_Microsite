@@ -114,6 +114,10 @@ img {
   color: var(--color-2);
 }
 
+#tilbud h5 {
+  font-weight: 600;
+}
+
 #informasjon {
   background-color: var(--color-2);
   align-items: center;
@@ -269,15 +273,31 @@ img {
     background-color: var(--color-5);
   }
 
+  #showcase h1 {
+    color: var(--color-1);
+  }
+
   #produkter {
     background-color: var(--color-5);
   }
 
   #tilbud {
-    background-color: var(--color-5);
+    background-color: var(--color-1);
+  }
+
+  #tilbud h5 {
+    color: var(--color-2);
+  }
+
+  #tilbud p {
+    color: var(--color-2);
   }
 
   #omos {
+    background-color: var(--color-5);
+  }
+
+  .spacer {
     background-color: var(--color-5);
   }
 
@@ -288,6 +308,6 @@ img {
   h5,
   h6,
   p {
-    color: #ffffff;
+    color: #e3e3e3;
   }
 }

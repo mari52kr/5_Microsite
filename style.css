@@ -32,7 +32,7 @@ html {
 
 h1 {
   font-family: var(--overskrift);
-  color: var(--color-1);
+  color: var(--color-2);
 }
 
 h2,
@@ -51,6 +51,34 @@ img {
 
 .navbar {
   font-family: var(--brodtekst);
+  background-color: transparent;
+  text-align: right;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: var(--color-1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--color-1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  color: red;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(assets/burgermenu.png);
 }
 
 .navbar-brand {
@@ -68,36 +96,50 @@ img {
 }
 
 #showcase {
-  background-image: url(assets/hero_example.jpg);
-  height: 91vh;
+  background-image: url(assets/Splashbilde_Tinto_blur.png);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-right: 2em;
   padding-left: 2em;
+
+  box-shadow: 1px 3px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+#showcase img {
+  filter: blur(0.3);
 }
 
 #showcase button:hover {
   background-color: var(--color-1);
+  border-color: var(--color-1);
+}
+
+#showcase button p:hover {
+  background-color: var(--color-3);
   border-color: transparent;
 }
 
 #showcase button {
   margin-top: 1.8em;
+  font-family: var(--brodtekst);
 }
 
 #showcase p {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 
 .btn {
-  color: var(--color-1);
-  border-color: var(--color-1);
+  color: var(--color-2);
+  border-color: var(--color-2);
 }
 
 #showcase .btn {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 
 #showcase .btn:hover {
@@ -105,7 +147,7 @@ img {
 }
 
 #tilbud {
-  background-color: var(--color-1);
+  background-color: var(--color-4);
   margin-bottom: -7px;
 }
 
@@ -119,7 +161,7 @@ img {
 }
 
 #informasjon {
-  background-color: var(--color-2);
+  background-color: var(--color-5);
   align-items: center;
 }
 
@@ -132,14 +174,37 @@ img {
 }
 
 #footer {
-  background-color: var(--color-2);
+  background-color: var(--color-5);
 }
 
 .spacer2 {
   margin-left: -12px;
   margin-right: -12px;
   margin-bottom: -1px;
-  background-color: var(--color-2);
+  background-color: white;
+}
+
+.infografikk img {
+  height: 35rem;
+}
+
+.colombia h5 {
+  color: var(--color-2);
+  margin-top: 3rem;
+  line-height: 2.3rem;
+}
+
+.infografikk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer3 {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -1px;
+  background-color: white;
 }
 
 .spacer {
@@ -197,30 +262,16 @@ img {
   color: #ffffff;
 }
 
+footer {
+  background-color: var(--color-3);
+  font-family: var(--brodtekst);
+}
+
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
 
 @media (min-width: 576px) {
-  body {
-    background-color: white;
-  }
-
-  #hero {
-    background-color: white;
-  }
-
-  #produkter {
-    background-color: white;
-  }
-
-  #tilbud {
-    background-color: var(--color-1);
-  }
-
-  #omos {
-    background-color: white;
-  }
 }
 
 /* END "sm-" 576px and up */
@@ -238,6 +289,9 @@ img {
 /**************************************************/
 @media (min-width: 992px) {
   /* END "lg-" 992px and up */
+  #showcase {
+    background-image: url(assets/Splashbilde_Tinto.png);
+  }
 }
 
 /**************************************************/
@@ -254,60 +308,65 @@ img {
     margin-right: 15rem;
     margin-left: 15rem;
   }
-}
 
-/**************************************************/
-/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
-/**************************************************/
-@media (min-width: 1400px) {
-  /* END "xxl-" 1400px and up */
-}
-
-@media (prefers-color-scheme: dark) {
-  /* Dark styles */
-  body {
-    background-color: var(--color-5);
+  .colombia h5 {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
-  #hero {
-    background-color: var(--color-5);
+  /**************************************************/
+  /* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+  /**************************************************/
+  @media (min-width: 1400px) {
+    /* END "xxl-" 1400px and up */
   }
 
-  #showcase h1 {
-    color: var(--color-1);
-  }
+  @media (prefers-color-scheme: dark) {
+    /* Dark styles */
+    body {
+      background-color: var(--color-5);
+    }
 
-  #produkter {
-    background-color: var(--color-5);
-  }
+    #hero {
+      background-color: var(--color-5);
+    }
 
-  #tilbud {
-    background-color: var(--color-1);
-  }
+    #showcase h1 {
+      color: var(--color-1);
+    }
 
-  #tilbud h5 {
-    color: var(--color-2);
-  }
+    #produkter {
+      background-color: var(--color-5);
+    }
 
-  #tilbud p {
-    color: var(--color-2);
-  }
+    #tilbud {
+      background-color: var(--color-1);
+    }
 
-  #omos {
-    background-color: var(--color-5);
-  }
+    #tilbud h5 {
+      color: var(--color-2);
+    }
 
-  .spacer {
-    background-color: var(--color-5);
-  }
+    #tilbud p {
+      color: var(--color-2);
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    color: #e3e3e3;
+    #omos {
+      background-color: var(--color-5);
+    }
+
+    .spacer {
+      background-color: var(--color-5);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: #e3e3e3;
+    }
   }
 }

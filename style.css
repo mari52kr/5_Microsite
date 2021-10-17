@@ -78,7 +78,7 @@ img {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url(assets/burgermenu.png);
+  background-image: url(asset/burgermenu.webp);
 }
 
 .navbar-brand {
@@ -96,7 +96,7 @@ img {
 }
 
 #showcase {
-  background-image: url(assets/Splashbilde_Tinto_blur.png);
+  background-image: url(asset/Splashbilde_Tinto_blur.webp);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -290,7 +290,7 @@ footer {
 @media (min-width: 992px) {
   /* END "lg-" 992px and up */
   #showcase {
-    background-image: url(assets/Splashbilde_Tinto.png);
+    background-image: url(asset/Splashbilde_Tinto.webp);
   }
 }
 
@@ -319,54 +319,5 @@ footer {
   /**************************************************/
   @media (min-width: 1400px) {
     /* END "xxl-" 1400px and up */
-  }
-
-  @media (prefers-color-scheme: dark) {
-    /* Dark styles */
-    body {
-      background-color: var(--color-5);
-    }
-
-    #hero {
-      background-color: var(--color-5);
-    }
-
-    #showcase h1 {
-      color: var(--color-1);
-    }
-
-    #produkter {
-      background-color: var(--color-5);
-    }
-
-    #tilbud {
-      background-color: var(--color-1);
-    }
-
-    #tilbud h5 {
-      color: var(--color-2);
-    }
-
-    #tilbud p {
-      color: var(--color-2);
-    }
-
-    #omos {
-      background-color: var(--color-5);
-    }
-
-    .spacer {
-      background-color: var(--color-5);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      color: #e3e3e3;
-    }
   }
 }
